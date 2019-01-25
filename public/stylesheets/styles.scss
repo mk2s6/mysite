@@ -1,0 +1,75 @@
+
+$maxSize : 40px;
+$minSize : 20px;
+
+$primaryColor: #2DCFC5;
+$secondaryColor: #0D47A1;
+$default : ghostWhite;
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    background-color: $default;
+    color: $default;
+}
+
+.nav-bar-nav {
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    display: flex;
+    background-color : $primaryColor;
+    justify-content: center!important;
+    padding: 0 15px;
+    position: fixed;
+    box-shadow: 0 2.5px 2px #ccc;
+}
+
+.nav-bar {
+    display: flex;
+    width: 94%;
+    position: relative;
+    justify-content: space-between;
+    align-items: center ;
+    height: auto;
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.nav-bar ul li {
+    margin: 0 12px;
+    font-size: $minSize;
+    text-transform: uppercase;
+    font-family: 'Roboto mono', monospace;
+}
+
+.nav-left-align {
+    text-align: left;
+}
+
+.nav-middle-align {
+    text-align: center!important;
+}
+
+.nav-right-align {
+    text-align: right;
+}
+
+.nav-middle-align ul ,.nav-right-align ul {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+}
+
+.nav-middle-align ul li, .nav-right-align ul li {
+    display: inline;
+    list-style-type: none;
+}
+
+p.logo-text {
+    font-family: "Roboto Mono",monospace;
+    font-size: $maxSize;
+}
